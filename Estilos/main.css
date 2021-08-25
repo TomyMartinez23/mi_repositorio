@@ -1,17 +1,11 @@
-hr {
-  opacity: 1;
-  height: 10px !important;
-  background: tan;
-}
-
 h1 {
-  font-size: 51px;
+  font-size: 54px;
   text-align: center;
   padding: 10px;
 }
 
 h2 {
-  font-size: 31px;
+  font-size: 44px;
   text-align: center;
   padding: 8px;
 }
