@@ -45,7 +45,7 @@ p {
 .servicio-padre {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
+  -ms-grid-columns: (1fr);
       grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
@@ -111,18 +111,6 @@ section a {
   font-size: 30px;
   text-decoration: none;
   color: black;
-}
-
-section h3 {
-  width: 220px;
-  height: 40px;
-  -webkit-transition: all 2s;
-  transition: all 2s;
-}
-
-section h3:hover {
-  height: 90px;
-  width: 320px;
 }
 
 .card-text {

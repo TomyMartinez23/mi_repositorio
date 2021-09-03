@@ -57,7 +57,7 @@ p{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-  
+
 }
 .foto{
     min-width: 170px;
@@ -71,6 +71,7 @@ p{
     margin: 10px;
     padding: 5px;
 }
+
 .foot{
    display: flex;
   
@@ -81,6 +82,18 @@ p{
     align-items: center;
     display: flex;
 
+}
+
+section img{
+    display: block;
+    margin: auto;
+
+}
+
+section a{
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
 }
 
 .card-text{
