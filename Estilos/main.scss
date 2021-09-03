@@ -1,52 +1,35 @@
 $min-ancho: 570px;
 $min-alto: 300px;
 $txt: 16px;
-
-
-
-
-
-hr{
-    opacity: 1;
-    height: 10px !important;
-    background: tan;
+/*Background de main*/
+.mn{
+    background-color: #d63031;
 }
+/*bk main*/
+/*Tamañode inicio*/
 h1{
-    font-size: $txt+35;
+    font-size: $txt+45;
     text-align: center;
     padding: 10px;
 }
 h2{
-    font-size: $txt+15;
+    font-size: $txt+25;
     text-align: center;
     padding: 8px;
-
 }
-
-p{
-    color:redwhite;
-}
-.bw{
-    background-color: brown;
-}
-.fz{
-    font-size: $txt+19;
-}
-
-.mn{
-    background-color: #d63031;
-}
+/*Fin de tamaños*/
+/*Modificaciones del carousel*/
 .hero{
- 
     text-align: center;
     height: 100vh;
 }
 .carousel img{
     width: 125vh;
     height: 60vh;
-   
-}
 
+}
+/*Fin de carousel*/
+/*bloque de productos*/
 .servicio-padre{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -71,31 +54,17 @@ p{
     margin: 10px;
     padding: 5px;
 }
-
-.foot{
-   display: flex;
-  
-}
-.footH{
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-
-}
-
 section img{
     display: block;
     margin: auto;
-
 }
-
 section a{
     font-size: 30px;
     text-decoration: none;
     color: black;
 }
-
+/*fin del bloque de productos*/
+/*estilos de cartas de los productos*/
 .card-text{
     display: flex;
     align-items: center;
@@ -179,7 +148,8 @@ h5{
     bottom: -25px;
     font-size: 20px ;
 }
-
+/*Fin de cartas de los productos*/
+/* Seccion CONTACTO*/
 .contact{
     width: $min-ancho+70;
     margin: auto;
@@ -212,13 +182,15 @@ h5{
         border: none;
     }
     &__boton{
-        background: #b11d1d;
+        background: #727272;
         width: 100%;
         margin-bottom: 20px;
         box-sizing: border-box;
         border: none;
     }
 }
+/*Fin de la seccion Contacto*/
+/*Modificacion del nav*/
 .navbar{
     text-decoration: none;
     &__ul{
@@ -228,21 +200,20 @@ h5{
     &__li{
         display: inline-block;
         position: relative;
-
     }
     &__a{
-        display: inline-block;
-        color: white;
+        display: inline-block;    
         text-decoration: none;
         text-transform: uppercase;
         letter-spacing: 0.5px;
         padding: 15px;
-        transition: all ease 0.3s;
+        transition: all ease 0.7s;
     }
     &__a:hover{
         background-color: #b11d1d;
         color: aliceblue;
     }
+    /*Fin del nav*/
     &__sub{
         background-color: lightslategray;
         position: absolute;
@@ -258,12 +229,19 @@ h5{
         width: 180px;
         text-decoration: none;
     }
-
-   
-      
-
   }
+  /*Inicio de media queries*/
   @media screen and (max-width: 768px){
+
+    .lg{
+        width: 140px;
+    }
+h1{
+    font-size: 38px;
+}
+h2{
+    font-size: 20px;
+}
 
     .carousel img{
         max-width: 320px;
@@ -276,11 +254,12 @@ h5{
 .contenedor{
     width: 350px;
     display: grid;
+ 
 }
 .carta{
     background: #b11d1d;
     border-radius: 15px;
-    padding: 20px;
+    padding: 16px;
     display: grid;
     align-items: center;
     position: relative;
@@ -296,12 +275,12 @@ h5{
         display: inline-block;
     }
     &__img{
-        width: 100%;
+        width: 120%;
         height: 100%;
         
     }
     &__titulo{
-        font-size: $txt+34;
+        font-size: $txt+24;
         font-weight: normal;
         margin-bottom: 10px;
         text-align: center;
@@ -331,9 +310,11 @@ h5{
     bottom: -35px;
     font-size: 16px ;
 }
+/*contact*/
 .contact{
-    width: 380px;
-    margin: auto;
+  
+    width: 100%;
+    margin: 0 auto;
     padding: 10px 20px;
     box-sizing: border-box;
     background: #222;
@@ -372,3 +353,18 @@ h5{
 
   }
 }
+.card-text{
+    display: flex;
+    align-items: center;
+
+}
+h5{
+    text-align: center;
+}
+
+.contenedor{
+    max-width: $min-ancho+420;
+    width: 90%;
+    margin: auto;
+}
+
