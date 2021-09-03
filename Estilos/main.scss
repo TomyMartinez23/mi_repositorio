@@ -83,28 +83,6 @@ p{
 
 }
 
-
-section img{
-    display: block;
-    margin: auto;
-
-}
-
-section a{
-    font-size: 30px;
-    text-decoration: none;
-    color: black;
-}
-section h3{
-    width: 220px; 
-    height: 40px;
-   transition: all 2s;       
-}
-section h3:hover {
-    height: 90px; 
-    width: 320px;
-  
-}
 .card-text{
     display: flex;
     align-items: center;
